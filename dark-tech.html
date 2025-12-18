@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Studio Dark Tech — AI Geschiedenisdocent (Robot)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="logo" href="index.html">←</a>
+
+      <nav class="nav__links" aria-label="Project navigatie">
+        <a href="#overview">Overzicht</a>
+        <a href="#role">Mijn rol</a>
+        <a href="#process">Proces</a>
+        <a href="#results">Resultaat</a>
+        <a href="#reflection">Reflectie</a>
+      </nav>
+
+      <button class="btn btn--ghost" id="themeToggle" type="button">Theme</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="projectHeader">
+        <h1>Studio Dark Tech — AI Geschiedenisdocent (Robot)</h1>
+        <p class="lead">
+          Provocatief prototype dat laat zien hoe een “onethische” AI door toon, framing en selectieve informatie
+          overtuigend kan lijken — naast een ethische variant die neutraler reageert.
+        </p>
+
+        <div class="pillrow">
+          <span class="pill">DBE</span>
+          <span class="pill">AI</span>
+          <span class="pill">Ethiek</span>
+          <span class="pill">Hardware</span>
+          <span class="pill">User testing</span>
+        </div>
+
+        <div class="projectLinks">
+          <a class="btn" href="#" target="_blank" rel="noreferrer">Prototype link</a>
+          <a class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">Repo / Docs</a>
+        </div>
+      </div>
+
+      <section id="overview" class="block">
+        <h2>Overzicht</h2>
+        <div class="grid grid--2">
+          <div class="card">
+            <h3>Probleem</h3>
+            <p>
+              Mensen vertrouwen AI-antwoorden snel, ook wanneer de output gekleurd is. Bij educatieve context
+              (zoals geschiedenis) kan framing of bias het beeld van “waarheid” beïnvloeden.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Oplossing</h3>
+            <p>
+              Een AI “geschiedenisdocent” in twee varianten: (1) ethisch/neutraler, (2) onethisch/meer sturend.
+              De robot maakt dit tastbaar via een fysieke behuizing en demonstratie.
+            </p>
+          </div>
+        </div>
+
+        <div class="mediaGrid">
+          <figure class="media">
+            <img src="assets/robot.jpg" alt="Robotbehuizing: geprint + MDF behuizing" />
+            <figcaption>Fysieke prototype: geprint bovenstuk + MDF onderstuk (laser-cut).</figcaption>
+          </figure>
+          <figure class="media">
+            <img src="assets/laser.jpg" alt="Lasersnijder proces" />
+            <figcaption>Lasersnijden van MDF-panelen voor het ondergedeelte van de behuizing.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="role" class="block">
+        <h2>Mijn rol</h2>
+        <div class="card">
+          <p>
+            Ik werkte aan zowel het technische als het onderzoekende deel: ontwerp en realisatie van (delen van) de behuizing,
+            het schrijven van trainingsdata voor de onethische AI, het uitvoeren/uitwerken van gebruikerstesten en
+            het opzetten van hardware (Raspberry Pi). Daarnaast documenteerde ik keuzes en voortgang in mijn PDP.
+          </p>
+        </div>
+      </section>
+
+      <section id="process" class="block">
+        <h2>Proces (DBE-leeruitkomsten)</h2>
+
+        <div class="timeline">
+          <div class="step">
+            <h3>Analyseren</h3>
+            <p>
+              Onderzoek naar bots, manipulatie, framing en gebruikersperceptie. Testopzet gemaakt en aannames aangescherpt
+              op basis van echte feedback.
+            </p>
+            <div class="smallNote">Bewijs: onderzoek + gebruikerstestdocument (Sprint 3)</div>
+          </div>
+
+          <div class="step">
+            <h3>Ontwerpen</h3>
+            <p>
+              Ontwerp van robotbehuizing (boven: 3D-print, onder: lasergesneden MDF) + vertaling van abstracte AI-ethiek
+              naar een demonstratie die mensen meteen “voelen”.
+            </p>
+            <div class="smallNote">Bewijs: ontwerp/tekeningen + foto’s prototype</div>
+          </div>
+
+          <div class="step">
+            <h3>Realiseren</h3>
+            <p>
+              Behuizing geproduceerd en AI geïntegreerd in hardware. Het systeem werkt end-to-end, maar reageert trager op de
+              Raspberry Pi door beperkte rekenkracht — dat gaf direct inzicht in performance/keuze trade-offs.
+            </p>
+            <div class="smallNote">Bewijs: hardware setup + console/AI run</div>
+          </div>
+
+          <div class="step">
+            <h3>Adviseren</h3>
+            <p>
+              Binnen het team adviezen gegeven over het verschil tussen ethisch vs. onethisch gedrag (toon, framing, grenzen),
+              en hoe je dit verantwoord uitlegt tijdens demo’s.
+            </p>
+          </div>
+
+          <div class="step">
+            <h3>Manage & Control & Persoonlijk leiderschap</h3>
+            <p>
+              Planning/documentatie geborgd en verantwoordelijkheid genomen in momenten met teamdruk. Feedback opgehaald,
+              verwerkt en omgezet naar concrete vervolgstappen.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="results" class="block">
+        <h2>Resultaat</h2>
+        <div class="grid grid--2">
+          <div class="card">
+            <h3>Wat er staat</h3>
+            <ul>
+              <li>Fysieke behuizing (geprint + MDF)</li>
+              <li>AI in ethische en onethische variant</li>
+              <li>Gebruikerstest uitgevoerd (inhoud, toon, snelheid, overtuigingskracht)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Wat we leerden</h3>
+            <ul>
+              <li>Neutraliteit voelt soms “te voorzichtig”, onethische toon voelt sneller overtuigend</li>
+              <li>Hardwarekeuze beïnvloedt direct de gebruikerservaring (latency)</li>
+              <li>Testen vroeg in het proces voorkomt verkeerde aannames</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mediaGrid">
+          <figure class="media">
+            <img src="assets/pi.jpg" alt="Raspberry Pi setup" />
+            <figcaption>Hardware setup: Raspberry Pi als basis voor de AI-run.</figcaption>
+          </figure>
+          <figure class="media">
+            <img src="assets/trainingdata.jpg" alt="Training data bestand" />
+            <figcaption>Trainingdata (onethische variant): framing/woordkeuze sturen output.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="reflection" class="block">
+        <h2>Reflectie</h2>
+        <div class="card">
+          <p>
+            Dit project heeft mij geholpen om DBE-competenties in één lijn te brengen: analyse → ontwerp → realisatie → validatie.
+            Ik kan nu beter uitleggen waarom een oplossing werkt, maar óók welke risico’s en ethische spanningen erin zitten.
+            Volgende stap voor mij is performance en UX verder verbeteren en nog gestructureerder valideren met meer testers.
+          </p>
+        </div>
+
+        <div class="callout">
+          <strong>Tip:</strong> vervang “Prototype link” bovenaan met je echte Netlify/GitHub link, en voeg 3–6 goede foto’s toe.
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> Youssef Zemouri</p>
+      </footer>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

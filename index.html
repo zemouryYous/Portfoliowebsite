@@ -1,7 +1,160 @@
 <!DOCTYPE html>
+<html lang="nl">
 <head>
-    Hello
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Youssef Zemouri — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Hello</h1>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="logo" href="index.html">YZ</a>
+
+      <nav class="nav__links" aria-label="Hoofdnavigatie">
+        <a href="#about">Over mij</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projecten</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="btn btn--ghost" id="themeToggle" type="button" aria-label="Toggle theme">
+        Theme
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="tag">Digital Business Engineer (in ontwikkeling)</p>
+          <h1>Youssef Zemouri</h1>
+          <p class="lead">
+            Ik maak digitale oplossingen die techniek en context verbinden — van analyse en concept tot prototype.
+            In Studio Dark Tech werkte ik aan een fysieke AI-robot die laat zien hoe beïnvloeding en framing kunnen werken.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#projects">Bekijk projecten</a>
+            <a class="btn btn--ghost" href="dark-tech.html">Dark Tech project</a>
+          </div>
+
+          <div class="meta">
+            <span>Focus: AI • Prototyping • UX • Documentatie</span>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <img src="assets/robot.jpg" alt="Foto van het robotprototype" />
+          <div class="hero__cardText">
+            <strong>Highlight:</strong> AI Geschiedenisdocent (ethisch vs. onethisch) + fysieke behuizing + hardware-integratie.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Over mij</h2>
+        <p>
+          Ik ben een DBE-student met interesse in hoe technologie invloed heeft op gedrag en besluitvorming.
+          Ik werk graag iteratief: onderzoeken → bouwen → testen → verbeteren.
+          In Dark Tech heb ik geleerd om niet alleen “iets werkends” te maken, maar ook de impact en risico’s ervan te snappen en uit te leggen.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="grid grid--3">
+          <div class="card">
+            <h3>Analyseren</h3>
+            <p>Onderzoek, aannames checken, testopzet, inzichten vertalen naar keuzes.</p>
+          </div>
+          <div class="card">
+            <h3>Ontwerpen</h3>
+            <p>Prototype-ontwerp (fysiek + digitaal), UX, ethische implicaties meenemen.</p>
+          </div>
+          <div class="card">
+            <h3>Realiseren</h3>
+            <p>3D-print/lasersnijden, AI-setup, hardware (Raspberry Pi), integratie.</p>
+          </div>
+          <div class="card">
+            <h3>Adviseren</h3>
+            <p>Keuzes onderbouwen (impact/ethiek), duidelijke communicatie naar stakeholders.</p>
+          </div>
+          <div class="card">
+            <h3>Manage & Control</h3>
+            <p>Documentatie, planning, iteratief werken, verantwoordelijkheid nemen.</p>
+          </div>
+          <div class="card">
+            <h3>Persoonlijk leiderschap</h3>
+            <p>Initiatief, feedback ophalen, reflecteren, doorpakken bij tegenslag.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projecten</h2>
+
+        <div class="grid grid--2">
+          <article class="project">
+            <img src="assets/usertest.jpg" alt="Gebruikerstest tijdens Dark Tech" />
+            <div class="project__body">
+              <h3>Studio Dark Tech — AI Geschiedenisdocent (Robot)</h3>
+              <p>
+                Een provocatief prototype dat het verschil laat zien tussen een ethische en onethische AI-docent
+                (framing, bias, beïnvloeding) — met fysieke behuizing en hardware.
+              </p>
+              <div class="pillrow">
+                <span class="pill">AI</span>
+                <span class="pill">Prototyping</span>
+                <span class="pill">User testing</span>
+                <span class="pill">Ethiek</span>
+              </div>
+              <a class="btn" href="dark-tech.html">Open projectpagina</a>
+            </div>
+          </article>
+
+          <article class="project project--placeholder">
+            <img src="assets/pi.jpg" alt="Placeholder project" />
+            <div class="project__body">
+              <h3>Volgende project</h3>
+              <p>Hier kun je later je volgende project toevoegen met hetzelfde format.</p>
+              <div class="pillrow">
+                <span class="pill">Coming soon</span>
+              </div>
+              <a class="btn btn--ghost" href="#contact">Contact</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Wil je samenwerken of meer zien? Stuur me een bericht.
+        </p>
+
+        <div class="contact">
+          <a class="btn btn--ghost" href="mailto:you@example.com">you@example.com</a>
+          <a class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+
+        <p class="fine">
+          © <span id="year"></span> Youssef Zemouri
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
+</html>
