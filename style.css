@@ -168,7 +168,18 @@
     overflow:hidden;
     box-shadow: var(--shadow);
   }
-  .media img{width:100%; height:260px; object-fit:cover; display:block;}
+ 
+
+  .media img{
+    width:100%;
+    height:auto;
+    max-height:420px;
+    object-fit:contain;
+    background:#000; /* optioneel, ziet er strak uit */
+    display:block;
+  }
+  
+
   .media figcaption{padding:10px 12px; color:var(--muted); font-size:.9rem;}
   
   .timeline{display:grid; gap:14px; margin-top:14px;}
